@@ -33,12 +33,12 @@ Schedule the pipeline to run daily, ensuring that the data and reports are alway
 ![image](https://github.com/user-attachments/assets/bcc677b8-6983-45a9-bda0-164d1bc18fc3)
 
 # Technology Stack
-Azure Data Factory (ADF): For orchestrating data movement and transformation.
-Azure Data Lake Storage (ADLS): For storing raw and processed data.
-Azure Databricks: For data transformation and processing.
-Azure Synapse Analytics: For data warehousing and SQL-based analytics.
-Power BI: For data visualization and reporting.
-Azure Key Vault: For securely managing credentials and secrets.
-SQL Server (On-Premises): Source of customer and sales data.
+- Azure Data Factory (ADF): For orchestrating data movement and transformation.
+- Azure Data Lake Storage (ADLS): For storing raw and processed data.
+- Azure Databricks: For data transformation and processing.
+- Azure Synapse Analytics: For data warehousing and SQL-based analytics.
+- Power BI: For data visualization and reporting.
+- Azure Key Vault: For securely managing credentials and secrets.
+- SQL Server (On-Premises): Source of customer and sales data.
 
 
