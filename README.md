@@ -43,26 +43,25 @@ Schedule the pipeline to run daily, ensuring that the data and reports are alway
 
 # Setup:
 Step 1: Azure Environment Setup
-Create Resource Group: Set up a new resource group in Azure.
-Provision Services:
-Create an Azure Data Factory instance.
-Set up Azure Data Lake Storage with bronze, silver, and gold containers.
-Set up an Azure Databricks workspace and Synapse Analytics workspace.
-Configure Azure Key Vault for secret management.
+- Create Resource Group: Set up a new resource group in Azure.
+- Create an Azure Data Factory instance.
+- Set up Azure Data Lake Storage with bronze, silver, and gold containers.
+- Set up an Azure Databricks workspace and Synapse Analytics workspace.
+= Configure Azure Key Vault for secret management.
 Step 2: Data Ingestion
-Set up SQL Server: Install SQL Server and SQL Server Management Studio (SSMS). Restore the AdventureWorks database.
-Ingest Data with ADF: Create pipelines in ADF to copy data from SQL Server to the bronze layer in ADLS.
+- Set up SQL Server: Install SQL Server and SQL Server Management Studio (SSMS). Restore the AdventureWorks database.
+- Ingest Data with ADF: Create pipelines in ADF to copy data from SQL Server to the bronze layer in ADLS.
 Step 3: Data Transformation
-Mount Data Lake in Databricks: Configure Databricks to access ADLS.
-Transform Data: Use Databricks notebooks to clean and aggregate the data, moving it from bronze to silver and then to gold.
+- Mount Data Lake in Databricks: Configure Databricks to access ADLS.
+- Transform Data: Use Databricks notebooks to clean and aggregate the data, moving it from bronze to silver and then to gold.
 Step 4: Data Loading and Reporting
-Load Data into Synapse: Set up a Synapse SQL pool and load the gold data for analysis
-Create Power BI Dashboard: Connect Power BI to Synapse and create visualizations based on business requirements.
+- Load Data into Synapse: Set up a Synapse SQL pool and load the gold data for analysis
+- Create Power BI Dashboard: Connect Power BI to Synapse and create visualizations based on business requirements.
 Step 5: Automation and Monitoring
-Schedule Pipelines: Use ADF to schedule the data pipelines to run daily, at selected times
-Monitor Pipeline Runs: Use the monitoring tools in ADF and Synapse to ensure successful pipeline execution.
+- Schedule Pipelines: Use ADF to schedule the data pipelines to run daily, at selected times
+- Monitor Pipeline Runs: Use the monitoring tools in ADF and Synapse to ensure successful pipeline execution.
 Step 6: Security and Governance
-Manage Access: Set up role-based access control (RBAC) using Azure Entra ID (formerly Active Directory).
+- Manage Access: Set up role-based access control (RBAC) using Azure Entra ID (formerly Active Directory).
 Step 7: End-to-End Testing
-Trigger and Test Pipelines: Insert new records into the SQL database and verify that the entire pipeline runs successfully, updating the Power BI dashboard.
+- Trigger and Test Pipelines: Insert new records into the SQL database and verify that the entire pipeline runs successfully, updating the Power BI dashboard.
 
